@@ -11,6 +11,12 @@ const svg = d3.select("#bar-chart")
     .attr("height", height);
 
 // Create the bar chart
+// .selectAll("rect") selects all rect elements
+// .data(data) binds data to the selection
+// .enter() creates placeholders for each data point
+// .append("rect") creates a rect for each data point
+// .attr() sets the x, y, width, and height attributes
+// .attr("fill", "steelblue") changes the fill color to steelblue
 svg.selectAll("rect")
     .data(data)
     .enter()
